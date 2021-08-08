@@ -15,14 +15,14 @@
 .cp_iptxt input[type='text']:focus {
 	outline: none;
 }
-.ef {
+.mousetrap {
 	padding: 7px 14px;
 	transition: 0s;
 	border: 1px solid #1b2538;
 	background: transparent;
 }
-.ef ~ .focus_line:before,
-.ef ~ .focus_line:after {
+.mousetrap ~ .focus_line:before,
+.mousetrap ~ .focus_line:after {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -30,16 +30,16 @@
 	height: 2px;
 	content: '';
 	transition: 0s;
-	background-color: #da3c41;
+	background-color: #aaaaaa;
 }
-.ef ~ .focus_line:after {
+.mousetrap ~ .focus_line:after {
 	top: auto;
 	right: 0;
 	bottom: 0;
 	left: auto;
 }
-.ef ~ .focus_line i:before,
-.ef ~ .focus_line i:after {
+.mousetrap ~ .focus_line i:before,
+.mousetrap ~ .focus_line i:after {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -47,46 +47,48 @@
 	height: 0;
 	content: '';
 	transition: 0.4s;
-	background-color: #da3c41;
+	background-color: #aaaaaa;
 }
-.ef ~ .focus_line i:after {
+.mousetrap ~ .focus_line i:after {
 	top: auto;
 	right: 0;
 	bottom: 0;
 	left: auto;
 }
-.ef:focus ~ .focus_line:before,
-.ef:focus ~ .focus_line:after,
-.cp_iptxt.ef ~ .focus_line:before,
-.cp_iptxt.ef ~ .focus_line:after {
+.mousetrap:focus ~ .focus_line:before,
+.mousetrap:focus ~ .focus_line:after,
+.cp_iptxt.mousetrap ~ .focus_line:before,
+.cp_iptxt.mousetrap ~ .focus_line:after {
 	width: 100%;
 	transition: 0.3s;
 }
-.ef:focus ~ .focus_line i:before,
-.ef:focus ~ .focus_line i:after,
-.cp_iptxt.ef ~ .focus_line i:before,
-.cp_iptxt.ef ~ .focus_line i:after {
+.mousetrap:focus ~ .focus_line i:before,
+.mousetrap:focus ~ .focus_line i:after,
+.cp_iptxt.mousetrap ~ .focus_line i:before,
+.cp_iptxt.mousetrap ~ .focus_line i:after {
 	height: 100%;
 	transition: 0.4s;
 }
-.ef ~ label {
+.mousetrap ~ p {
 	position: absolute;
 	z-index: -1;
-	top: 10px;
+	top: -6px;
 	left: 14px;
 	width: 100%;
 	transition: 0.3s;
 	letter-spacing: 0.5px;
 	color: #aaaaaa;
 }
-.ef:focus ~ label,
-.cp_iptxt.ef ~ label {
-	font-size: 12px;
-	top: -18px;
+.mousetrap:focus ~ p,
+.cp_iptxt.mousetrap ~ p {
+	font-size: 16px;
+	top: -40px;
 	left: 0;
 	transition: 0.3s;
-	color: #da3c41;  /*#da3c41*/
+	z-index: -99999999;
+	color: #00acee;  /*#da3c41*/
 }
+
 
 ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
 ローディング画面
@@ -304,8 +306,7 @@ hanbager
 56
 #humMenu {
   padding: 12px;
-  background: white;
-}
+} 
  
 #humCheck, #humClose { display:none; }
 #humOpen {
@@ -360,9 +361,9 @@ nav li a{
 }
 
 .btn-open {
-	margin-left: 46%;
+	margin-left: 48%;
 	margin-bottom: 0%;
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 /* #kensaku {
@@ -373,11 +374,11 @@ nav li a{
 ぼたんんんんんんんんんんんんんんんんんん
 
 .container {
-	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+	
 	text-align: center;
 	padding-top: 0px;
 	margin-right: 20%;
-  }
+}
   .btn-open {
 	display: inline-block;
 	width: 180px;
@@ -393,6 +394,7 @@ nav li a{
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
+	margin-left: 46%;
   }
   .btn-open:after{
 	width: 100%;
@@ -420,3 +422,28 @@ nav li a{
   }
 
   ２２２２２２２２２２２２２２２２２２２２２
+  
+  h1{
+	background: silver;
+	width: 1000px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #cccccc;
+	margin: 30px auto;
+  }
+
+  #contextmenu{
+	display:none;
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:200px;
+	height:100px;
+	border:2px solid #1DA1F2;
+	background-color:#fff;
+  }
+  #contextmenu li{
+	cursor:pointer;
+  }
+
+
