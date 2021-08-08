@@ -4,12 +4,13 @@
 <head>
   <title>Twitter検索</title>
   <meta class="utf8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js"></script>
   <script src="test.js"></script>
   <link rel="stylesheet" href="test.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
-<body>
+<body id="main">
 
   <div id="loading">
     <div class="loader"></div>
@@ -22,6 +23,10 @@
     <div class="cp_item"></div>
   </div>
 
+  
+
+ 
+
   <div id="humMenu">
     <input id="humCheck" type="checkbox">
     <label id="humOpen" for="humCheck"><img src="images.png" alt="メニュー" width="51" height="42"></label>
@@ -29,31 +34,48 @@
     <nav>
       <ul class="inner">
         <li><a href="file:///C:/Users/yamamoto/3D%20Objects/html/Twitter/test.html">ホーム</a></li>
-        <li><a href="https://twitter.com/TAMOMAKI">運営者</a></li>
         <li><a href="file:///C:/Users/yamamoto/3D%20Objects/html/Twitter/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84.html">利用規約</a></li>
         <li><a href="file:///C:/Users/yamamoto/3D%20Objects/html/Twitter/%E8%B3%AA%E5%95%8F.html">質問</a></li>
+        <li><a href="https://twitter.com/TAMIMAKI">運営者のTwitter↓</a></li>
+        <a class="twitter-timeline" data-lang="ja" data-width="650" data-height="500" href="https://twitter.com/nori_blogger?ref_src=twsrc%5Etfw">Tweets by nori_blogger</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </ul>
     </nav>
   </div>
 
   <div class="syasin">
-    <img src="無題193_20210518174559-removebg-preview.png" class="aikon" width="700">
+    <a href="file:///C:/Users/yamamoto/3D%20Objects/html/Twitter/test.html"><img src="無題193_20210518174559-removebg-preview.png" class="aikon" width="700"></a>
   </div>
-  
+  <p id="output-message"></p>
   <div id="kensaku">
     <div  class="cp_iptxt">
-      <input class="ef" type="text" placeholder="">
-      <label>検索したい事</label>
+      <input id="message" class="mousetrap" type="text" placeholder="">
+      <p class="testoo">検索したい事</p>
       <span class="focus_line"><i></i></span>
     </div>
   <div class="container">
-    <a href="https://www.youtube.com/" class="btn-open" onclick="clickBtn1()">検索</a>
+     <!-- <a  type="button" onclick="showMessage()" class="btn-open" >検索</a> -->
+     <!-- <input type="button" class="btn-open"  onclick="buttonClick()"  value="送信"> -->
+     
+      <a type="submit" class="btn-open" href="#" onclick="buttonClick()">検索</a>     
 
 
- 
+     <body onContextmenu="return false;">
+      <div id="contextmenu">
+        <ul>
+          <li onClick="menu1()">Twitter</li>
+          <li onClick="menu2()">Yahoo!</li>
+          <li onClick="menu3()">Amazon</li>
+        </ul>
+      </div>
 
-  <p class="c" 　title="©2021TwiSaech">© TwiSaech</p>
 
+
+     <p class="c" 　title="©2021TwiSaech">© TwiSaech</p>
+  </div>
+
+  
+  
 </body>
 
-</html>
+</html> 
+
