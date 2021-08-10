@@ -79,7 +79,7 @@
 	letter-spacing: 0.5px;
 	color: #aaaaaa;
 }
-.mousetrap:focus ~ p,
+/* .mousetrap:focus ~ p, */
 .cp_iptxt.mousetrap ~ p {
 	font-size: 16px;
 	top: -40px;
@@ -445,6 +445,12 @@ nav li a{
   #contextmenu li{
 	cursor:pointer;
   }
+
+
+  ul {
+	list-style: none;
+  }
+
 
 
 
