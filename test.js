@@ -21,29 +21,31 @@ window.onload = function(){
     open( "https://www.amazon.co.jp/", "_blank" ) ;
   }
 
-
-
-
-var min = 1 ;
-var max = 2 ;   
-
-var a = Math.floor( Math.random() * (max + 1 - min) ) + min ;
-random = a * 1000
-console.log(random)
-
-window.setTimeout(function(){
+  
+  
+  
+  var min = 1 ;
+  var max = 2 ;   
+  
+  var a = Math.floor( Math.random() * (max + 1 - min) ) + min ;
+  random = a * 1000
+  console.log(random)
+  
+  window.setTimeout(function(){
     const spinner = document.getElementById('loading');
     spinner.classList.add('loaded');
 }, random);
 
 window.setTimeout(function(){
-    const spinner = document.getElementById('abc');
-    spinner.classList.add('loaded');
+  const spinner = document.getElementById('abc');
+  spinner.classList.add('loaded');
 }, random);
 
 
 
 
+// const textbox = document.getElementById("message")
+// const value = textbox.value
 
 function buttonClick() {
   const textbox = document.getElementById("message")
@@ -64,18 +66,22 @@ Mousetrap.bind('enter', function () {
 
 
 
-document.addEventListener("keydown", (event) => {
-  const keyName = event.key;
-  alert(keyName + "が押された");
-}, false);
+Mousetrap.bind('alt+s', function () {
+  const textbox = document.getElementById("message")
+  const value = textbox.value
+  alert(value)
+}); 
 
 
+function focusA(){
+  document.getElementById('textt').innerHTML = "<p></p>";
 
-textBox = document.getElementById("message");    // テキストボックスのDOM取得
-textBox.addEventListener("keyup", (event) => {
-  alert("texttt");
-}, false);
+} 
 
+function blurA(){
+  document.getElementById('textt').innerHTML = "検索したい事";
+
+}
 
 
 
