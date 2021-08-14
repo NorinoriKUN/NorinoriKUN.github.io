@@ -443,13 +443,52 @@ nav li a{
 	background-color:#fff;
   }
   #contextmenu li{
-	cursor:pointer;
-  }
-
-
-  ul {
-	list-style: none;
-  }
+	  cursor:pointer;
+	}
+	
+	
+	ul {
+		list-style: none;
+	}
+	
+	
+	/* @media screen and (max-width: 1366px) {
+		.c {
+			margin-top: 24%;
+		}
+		
+	  .syasin {
+		  margin-right: 20%;
+		  margin-top: 13%;
+		}
+		
+	} */
+	@media screen and (max-width: 414px) {
+		.c {
+			margin-top: 20%;
+		}
+		
+	}	
+	@media screen and (max-width: 1024px) {
+		.c {
+			margin-left: 48%;
+			margin-top: 27%;
+		}
+		
+		.syasin {
+		  margin-right: 47%;
+		  margin-top: 3%;
+		}
+		
+		.btn-open {
+			margin-left: 44%;
+		}
+		
+	}
+	
+	
+	
+	
 
 
 
