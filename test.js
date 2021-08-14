@@ -1,3 +1,4 @@
+
 window.onload = function(){
     document.getElementById("main").addEventListener('contextmenu',function (e){
       //マウスの位置をstyleへ設定（左上の開始位置を指定）
@@ -82,6 +83,24 @@ function blurA(){
   document.getElementById('textt').innerHTML = "検索したい事";
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener("keydown", (event) => {
+//   const keyName = event.key;
+//   alert(keyName + "が押された");
+// }, false); 
+
+
 
 
 
